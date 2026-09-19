@@ -32,7 +32,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/rosh-predicts-website">
 
       <ScrollToTop />
 
