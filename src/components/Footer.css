@@ -1,0 +1,675 @@
+/* =================================================
+   SITE FOOTER
+================================================= */
+
+.site-footer {
+  position: relative;
+
+  width: 100%;
+
+  background: #17365d;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =================================================
+   DECORATIVE SPARKS
+================================================= */
+
+.footer-spark {
+  position: absolute;
+
+  pointer-events: none;
+
+  color: #f1d34e;
+
+  opacity: 0.5;
+}
+
+.footer-spark-one {
+  top: 25px;
+
+  right: 10%;
+
+  font-size: 14px;
+}
+
+.footer-spark-two {
+  bottom: 25px;
+
+  left: 8%;
+
+  font-size: 11px;
+
+  color: #c97684;
+}
+
+
+/* =================================================
+   FOOTER MAIN
+================================================= */
+
+.footer-main {
+  width: 100%;
+
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  padding: 38px 7% 30px;
+
+  display: grid;
+
+  grid-template-columns: 1.8fr 0.8fr 0.8fr;
+
+  gap: 60px;
+}
+
+
+/* =================================================
+   FOOTER BRAND
+================================================= */
+
+.footer-brand {
+  max-width: 360px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* =================================================
+   FULL ROSH PREDICTS LOGO
+================================================= */
+
+.footer-brand-logo-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  text-decoration: none;
+
+  margin-bottom: 12px;
+}
+
+.footer-brand-logo {
+  width: 245px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.footer-brand-logo-link:hover .footer-brand-logo {
+  transform: translateY(-1px);
+
+  opacity: 0.9;
+}
+
+
+/* =================================================
+   FOOTER BRAND DESCRIPTION
+================================================= */
+
+.footer-brand span {
+  display: block;
+
+  color: #c9d5e0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =================================================
+   FOOTER COLUMNS
+================================================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.footer-column h4 {
+  margin: 2px 0 14px;
+
+  color: #e8a8b2;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =================================================
+   EXPLORE LINKS
+================================================= */
+
+.footer-column > a:not(.footer-social-link) {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #17365d !important;
+
+  opacity: 1 !important;
+
+  text-decoration: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  transition: color 0.2s ease;
+}
+
+.footer-column > a:not(.footer-social-link):hover {
+  color: #f1d34e !important;
+}
+
+
+/* =================================================
+   SOCIAL LINKS
+================================================= */
+
+.footer-social-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 9px;
+
+  color: #17365d !important;
+
+  opacity: 1 !important;
+
+  text-decoration: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-social-link:hover {
+  transform: translateX(2px);
+}
+
+
+/* =================================================
+   SOCIAL ICON BOX
+================================================= */
+
+.footer-social-icon {
+  width: 25px;
+
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  flex-shrink: 0;
+}
+
+.footer-social-icon svg {
+  width: 15px;
+
+  height: 15px;
+}
+
+
+/* =================================================
+   INSTAGRAM
+================================================= */
+
+.instagram-link .footer-social-icon {
+  color: #e1306c;
+}
+
+.instagram-link .footer-social-icon svg {
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.8;
+}
+
+.instagram-link .social-dot {
+  fill: currentColor;
+
+  stroke: none;
+}
+
+.instagram-link:hover {
+  color: #e1306c !important;
+}
+
+
+/* =================================================
+   WHATSAPP
+================================================= */
+
+.whatsapp-link .footer-social-icon {
+  color: #25d366;
+}
+
+.whatsapp-link .footer-social-icon svg {
+  fill: currentColor;
+}
+
+.whatsapp-link:hover {
+  color: #25d366 !important;
+}
+
+
+/* =================================================
+   YOUTUBE
+================================================= */
+
+.youtube-link .footer-social-icon {
+  color: #ff4d5a;
+}
+
+.youtube-link .footer-social-icon svg {
+  fill: currentColor;
+}
+
+.youtube-link .youtube-play {
+  fill: #17365d;
+}
+
+.youtube-link:hover {
+  color: #ff4d5a !important;
+}
+
+
+/* =================================================
+   CONTACT
+================================================= */
+
+.contact-link .footer-social-icon {
+  color: #ccadcf;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+}
+
+.contact-link:hover {
+  color: #ccadcf !important;
+}
+
+
+/* =================================================
+   FOOTER BOTTOM
+================================================= */
+
+.footer-bottom {
+  width: 100%;
+
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  padding: 13px 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #aebdca;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+}
+
+.footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+/* =================================================
+   PRIVACY / TERMS
+================================================= */
+
+.footer-bottom-links button {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #aebdca;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links button:hover {
+  color: #f1d34e;
+}
+
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (max-width: 800px) {
+
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 35px;
+
+    padding: 35px 6% 28px;
+  }
+
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 600px) {
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 28px 25px;
+
+    padding: 35px 7% 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+
+    max-width: 100%;
+  }
+
+  .footer-brand-logo {
+    width: 210px;
+  }
+
+  .footer-brand span {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    padding: 13px 7%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+
+}
+
+
+/* =================================================
+   PRIVACY / TERMS MODAL
+================================================= */
+
+.policy-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 5000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(23, 54, 93, 0.45);
+
+  backdrop-filter: blur(4px);
+}
+
+
+/* =================================================
+   MODAL BOX
+================================================= */
+
+.policy-modal {
+  position: relative;
+
+  width: min(560px, 100%);
+
+  max-height: 80vh;
+
+  overflow-y: auto;
+
+  padding: 38px 42px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1edf2;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 20px 60px rgba(23, 54, 93, 0.2);
+}
+
+
+/* =================================================
+   CLOSE BUTTON
+================================================= */
+
+.policy-close {
+  position: absolute;
+
+  top: 14px;
+
+  right: 16px;
+
+  width: 32px;
+
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  color: #17365d;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.policy-close:hover {
+  background: #eaf8fc;
+
+  color: #c97684;
+}
+
+
+/* =================================================
+   POLICY CONTENT
+================================================= */
+
+.policy-content {
+  padding-right: 8px;
+}
+
+.policy-label {
+  margin: 0 0 8px;
+
+  color: #c97684;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.policy-content h2 {
+  margin: 0 0 20px;
+
+  color: #173f72;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 32px;
+
+  font-weight: 400;
+}
+
+.policy-content h3 {
+  margin: 22px 0 8px;
+
+  color: #173f72;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+}
+
+.policy-content p:not(.policy-label):not(.policy-note) {
+  margin: 0 0 12px;
+
+  color: #526b82;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =================================================
+   PLACEHOLDER NOTE
+================================================= */
+
+.policy-note {
+  margin-top: 22px;
+
+  padding: 12px 14px;
+
+  background: #f1f9fc;
+
+  border-left: 3px solid #c97684;
+
+  color: #6b7f91;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* =================================================
+   MOBILE MODAL
+================================================= */
+
+@media (max-width: 600px) {
+
+  .policy-overlay {
+    padding: 15px;
+  }
+
+  .policy-modal {
+    max-height: 85vh;
+
+    padding: 32px 25px;
+  }
+
+  .policy-content h2 {
+    font-size: 27px;
+  }
+
+  .policy-content h3 {
+    font-size: 16px;
+  }
+
+  .policy-content p:not(.policy-label):not(.policy-note) {
+    font-size: 12px;
+  }
+
+}

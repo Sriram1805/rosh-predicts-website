@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <filter id="wash" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="7"/>
+    </filter>
+    <radialGradient id="blueWash">
+      <stop offset="0" stop-color="#62B7D6" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#62B7D6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="yellowWash">
+      <stop offset="0" stop-color="#EBCB3F" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#EBCB3F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lavWash">
+      <stop offset="0" stop-color="#A69ABF" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#A69ABF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Soft watercolor washes -->
+  <circle cx="1200" cy="430" r="260" fill="url(#blueWash)" filter="url(#wash)"/>
+  <circle cx="1390" cy="250" r="180" fill="url(#yellowWash)" filter="url(#wash)"/>
+  <circle cx="1060" cy="620" r="170" fill="url(#lavWash)" filter="url(#wash)"/>
+
+  <!-- Gold celestial rings -->
+  <ellipse cx="1200" cy="445" rx="310" ry="355" stroke="#C99B3A" stroke-opacity=".55" stroke-width="1.5"/>
+  <ellipse cx="1200" cy="445" rx="245" ry="285" stroke="#C99B3A" stroke-opacity=".35" stroke-width="1"/>
+
+  <!-- Top-left watercolor floral cluster -->
+  <g opacity=".82" filter="url(#wash)">
+    <g transform="translate(65 70)">
+      <ellipse rx="25" ry="62" fill="#2E79B5" transform="rotate(-55)"/>
+      <ellipse rx="25" ry="62" fill="#5B9CC5" transform="rotate(-28)"/>
+      <ellipse rx="24" ry="58" fill="#1E639F" transform="rotate(0)"/>
+      <ellipse rx="24" ry="58" fill="#77A9C4" transform="rotate(28)"/>
+      <ellipse rx="23" ry="57" fill="#A6B8C2" transform="rotate(55)"/>
+      <ellipse rx="20" ry="52" fill="#2C75AE" transform="rotate(85)"/>
+      <circle r="24" fill="#D9B72E"/>
+    </g>
+    <g transform="translate(25 175)">
+      <ellipse rx="20" ry="55" fill="#E1C12F" transform="rotate(-55)"/>
+      <ellipse rx="20" ry="52" fill="#E8CF52" transform="rotate(-18)"/>
+      <ellipse rx="20" ry="52" fill="#2D78B2" transform="rotate(18)"/>
+      <ellipse rx="20" ry="54" fill="#6E9DB8" transform="rotate(55)"/>
+      <circle r="19" fill="#D7A92D"/>
+    </g>
+  </g>
+
+  <!-- Bottom-right watercolor floral cluster -->
+  <g opacity=".84" filter="url(#wash)">
+    <g transform="translate(1510 815)">
+      <ellipse rx="25" ry="62" fill="#2B78B4" transform="rotate(-55)"/>
+      <ellipse rx="25" ry="62" fill="#4E91C0" transform="rotate(-28)"/>
+      <ellipse rx="24" ry="58" fill="#1D619F" transform="rotate(0)"/>
+      <ellipse rx="24" ry="58" fill="#83A9BB" transform="rotate(28)"/>
+      <ellipse rx="23" ry="57" fill="#AEBCC0" transform="rotate(55)"/>
+      <circle r="24" fill="#D9B72E"/>
+    </g>
+    <g transform="translate(1435 865)">
+      <ellipse rx="20" ry="55" fill="#E1C12F" transform="rotate(-55)"/>
+      <ellipse rx="20" ry="52" fill="#F0D84F" transform="rotate(-18)"/>
+      <ellipse rx="20" ry="52" fill="#347EB5" transform="rotate(18)"/>
+      <ellipse rx="20" ry="54" fill="#6C9DB8" transform="rotate(55)"/>
+      <circle r="19" fill="#D7A92D"/>
+    </g>
+  </g>
+
+  <!-- Small gold stars -->
+  <g fill="#C99B3A" opacity=".9">
+    <path d="M1010 210 l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
+    <path d="M1460 150 l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
+    <path d="M1515 310 l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M1035 735 l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+  </g>
+
+  <!-- Moon emblem -->
+  <g transform="translate(1200 445)">
+    <circle r="92" fill="#F8FCFD" fill-opacity=".82"/>
+    <path d="M18 -45c-31 10-48 42-38 73 10 31 43 47 74 36-25-2-45-18-53-42-8-25-1-50 17-67z"
+          fill="#275E82"/>
+    <g stroke="#C99B3A" stroke-width="2" opacity=".8">
+      <path d="M0-122v18M0 104v18M-122 0h18M104 0h18"/>
+      <path d="M-86-86l13 13M73 73l13 13M86-86L73-73M-73 73l-13 13"/>
+    </g>
+    <path d="M0-143 l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#C99B3A"/>
+  </g>
+</svg>

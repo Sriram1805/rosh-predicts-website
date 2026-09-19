@@ -1,0 +1,859 @@
+/* =========================================================
+   ROSH PREDICTS
+   ABOUT PAGE
+
+   Palette:
+   Sky Blue
+   Navy
+   Rose
+   Soft Yellow
+   Mauve
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #173f72;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+
+  min-height: 430px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  padding: 50px 7%;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 7% 50%,
+      rgba(105, 204, 226, 0.32),
+      transparent 34%
+    ),
+
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(241, 211, 78, 0.17),
+      transparent 24%
+    ),
+
+    radial-gradient(
+      circle at 90% 88%,
+      rgba(204, 173, 207, 0.18),
+      transparent 27%
+    ),
+
+    linear-gradient(
+      135deg,
+      #e0f7fb 0%,
+      #eefafd 52%,
+      #fff9fa 100%
+    );
+}
+
+.about-hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 650px;
+}
+
+.about-eyebrow {
+  margin: 0 0 12px;
+
+  color: #c97684;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  font-weight: 500;
+}
+
+.about-hero h1 {
+  margin: 0 0 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(52px, 5.5vw, 76px);
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+
+  color: #173f72;
+}
+
+.about-hero-content > p:last-child {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: #4c7690;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   HERO ART
+========================================================= */
+
+.about-hero-art {
+  position: relative;
+
+  width: 370px;
+  height: 370px;
+
+  justify-self: center;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.about-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(40px);
+
+  pointer-events: none;
+}
+
+.about-glow-blue {
+  width: 270px;
+  height: 270px;
+
+  background: rgba(77, 192, 221, 0.18);
+}
+
+.about-glow-yellow {
+  width: 125px;
+  height: 125px;
+
+  top: 2%;
+  right: 0;
+
+  background: rgba(241, 211, 78, 0.20);
+
+  filter: blur(35px);
+}
+
+.about-ring {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(198, 151, 49, 0.40);
+}
+
+.about-ring-one {
+  width: 320px;
+  height: 320px;
+}
+
+.about-ring-two {
+  width: 245px;
+  height: 245px;
+
+  border-color: rgba(58, 137, 169, 0.25);
+}
+
+.about-orb {
+  position: relative;
+
+  z-index: 3;
+
+  width: 190px;
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(163, 229, 239, 0.78),
+      rgba(105, 202, 225, 0.38)
+    );
+
+  border: 1px solid rgba(190, 151, 63, 0.25);
+
+  box-shadow:
+    inset 0 0 50px rgba(255, 255, 255, 0.30);
+}
+
+.about-orb span {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.42);
+
+  color: #174a78;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 42px;
+}
+
+.about-star {
+  position: absolute;
+
+  color: #d09a35;
+
+  z-index: 5;
+
+  font-size: 18px;
+}
+
+.about-star-one {
+  top: 7%;
+  right: 8%;
+}
+
+.about-star-two {
+  bottom: 10%;
+  left: 7%;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   PROFILE
+   PERSON BEHIND THE SPACE
+========================================================= */
+
+.about-profile {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 65px 7% 70px;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  align-items: center;
+
+  gap: 60px;
+}
+
+.about-profile-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 360px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e1f6fb,
+      #f7fbfc
+    );
+
+  overflow: hidden;
+
+  border: 1px solid rgba(107, 178, 201, 0.15);
+}
+
+.about-profile-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.profile-image-accent {
+  position: absolute;
+
+  width: 85px;
+  height: 85px;
+
+  right: -25px;
+  bottom: -25px;
+
+  border-radius: 50%;
+
+  background: rgba(241, 211, 78, 0.24);
+
+  filter: blur(4px);
+
+  pointer-events: none;
+}
+
+.about-profile-content {
+  max-width: 580px;
+}
+
+.section-label {
+  margin: 0 0 14px;
+
+  color: #c97684;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  font-weight: 500;
+}
+
+.about-profile-content h2,
+.about-offer-heading h2,
+.about-philosophy-content h2,
+.about-cta h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 4.5vw, 60px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  color: #173f72;
+}
+
+.about-profile-content > p:not(.section-label) {
+  margin: 17px 0 0;
+
+  color: #607d91;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   OFFER
+========================================================= */
+
+.about-offer {
+  padding: 70px 7% 75px;
+
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(241, 211, 78, 0.10),
+      transparent 24%
+    ),
+
+    linear-gradient(
+      135deg,
+      #eaf8fc,
+      #f5fbfc,
+      #fff8fa
+    );
+}
+
+.about-offer-heading {
+  max-width: 1250px;
+
+  margin: 0 auto 32px;
+}
+
+.about-offer-grid {
+  max-width: 1250px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.about-offer-card {
+  min-height: 240px;
+
+  padding: 27px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(240, 249, 252, 0.85)
+    );
+
+  border: 1px solid rgba(107, 178, 201, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-offer-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(49, 105, 130, 0.10);
+}
+
+.offer-number {
+  display: block;
+
+  color: #c97684;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.offer-symbol {
+  display: block;
+
+  margin-top: 17px;
+
+  color: #d09a35;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+}
+
+.about-offer-card h3 {
+  margin: 11px 0 9px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 27px;
+
+  font-weight: 400;
+
+  color: #173f72;
+}
+
+.about-offer-card p {
+  max-width: 340px;
+
+  margin: 0;
+
+  color: #607d91;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+========================================================= */
+
+.about-philosophy {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 70px 7%;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  align-items: center;
+
+  gap: 60px;
+}
+
+.philosophy-decoration {
+  position: relative;
+
+  height: 300px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-ring-one,
+.philosophy-ring-two {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(198, 151, 49, 0.35);
+}
+
+.philosophy-ring-one {
+  width: 270px;
+  height: 270px;
+}
+
+.philosophy-ring-two {
+  width: 195px;
+  height: 195px;
+
+  border-color: rgba(58, 137, 169, 0.25);
+}
+
+.philosophy-moon {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(151, 225, 239, 0.65),
+      rgba(108, 203, 225, 0.30)
+    );
+
+  color: #174a78;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 55px;
+}
+
+.about-philosophy-content {
+  max-width: 600px;
+}
+
+.about-philosophy-content > p:last-child {
+  max-width: 540px;
+
+  margin: 20px 0 0;
+
+  color: #607d91;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+  padding: 75px 20px 80px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(109, 202, 226, 0.22),
+      transparent 28%
+    ),
+
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(241, 211, 78, 0.14),
+      transparent 25%
+    ),
+
+    linear-gradient(
+      135deg,
+      #dff5fb,
+      #eefaff,
+      #fff8f9
+    );
+}
+
+.about-cta > p:not(.section-label) {
+  max-width: 550px;
+
+  margin: 20px auto 0;
+
+  color: #607d91;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+.about-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 25px;
+
+  padding: 14px 27px;
+
+  background: #c97684;
+
+  border: 1px solid #c97684;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.about-cta-button:hover {
+  background: #b96373;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    padding: 70px 7% 45px;
+  }
+
+  .about-hero-content {
+    margin: auto;
+  }
+
+  .about-hero-content > p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero-art {
+    width: 330px;
+    height: 330px;
+
+    margin: 15px auto 0;
+  }
+
+  .about-ring-one {
+    width: 285px;
+    height: 285px;
+  }
+
+  .about-ring-two {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-orb {
+    width: 165px;
+    height: 165px;
+  }
+
+  .about-profile {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    max-width: 750px;
+
+    padding: 60px 6% 65px;
+  }
+
+  .about-profile-image {
+    height: 360px;
+  }
+
+  .about-profile-content {
+    max-width: 650px;
+  }
+
+  .about-offer-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+  }
+
+  .about-philosophy {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    max-width: 750px;
+
+    padding: 65px 6%;
+  }
+
+  .about-philosophy-content {
+    margin: auto;
+  }
+
+  .about-philosophy-content > p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    padding: 60px 6% 35px;
+  }
+
+  .about-hero h1 {
+    font-size: 46px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-hero-content > p:last-child {
+    font-size: 14px;
+  }
+
+  .about-hero-art {
+    width: 285px;
+    height: 285px;
+  }
+
+  .about-ring-one {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-ring-two {
+    width: 190px;
+    height: 190px;
+  }
+
+  .about-orb {
+    width: 145px;
+    height: 145px;
+  }
+
+  .about-orb span {
+    width: 50px;
+    height: 50px;
+
+    font-size: 34px;
+  }
+
+  .about-profile {
+    padding: 55px 6% 60px;
+
+    gap: 35px;
+  }
+
+  .about-profile-image {
+    height: 300px;
+  }
+
+  .about-profile-content h2,
+  .about-offer-heading h2,
+  .about-philosophy-content h2,
+  .about-cta h2 {
+    font-size: 38px;
+  }
+
+  .about-profile-content > p:not(.section-label) {
+    font-size: 14px;
+  }
+
+  .about-offer {
+    padding: 60px 6% 65px;
+  }
+
+  .about-offer-heading {
+    margin-bottom: 28px;
+  }
+
+  .about-offer-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .about-philosophy {
+    padding: 60px 6%;
+  }
+
+  .philosophy-decoration {
+    height: 250px;
+  }
+
+  .philosophy-ring-one {
+    width: 230px;
+    height: 230px;
+  }
+
+  .philosophy-ring-two {
+    width: 170px;
+    height: 170px;
+  }
+
+  .philosophy-moon {
+    width: 100px;
+    height: 100px;
+
+    font-size: 48px;
+  }
+
+  .about-cta {
+    padding: 65px 6% 70px;
+  }
+
+  .about-cta-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+}
