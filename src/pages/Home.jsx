@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Home.css";
 
 function Home() {
@@ -36,21 +38,21 @@ function Home() {
 
           <div className="hero-buttons">
 
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="primary-button"
             >
               Explore Services
               <span aria-hidden="true">→</span>
-            </a>
+            </Link>
 
-            <a
-              href="/classes"
+            <Link
+              to="/classes"
               className="secondary-button"
             >
               Explore Classes
               <span aria-hidden="true">→</span>
-            </a>
+            </Link>
 
           </div>
 
@@ -252,9 +254,9 @@ function Home() {
               questions and areas of focus.
             </p>
 
-            <a href="/services">
+            <Link to="/services">
               Learn More →
-            </a>
+            </Link>
 
           </div>
 
@@ -274,9 +276,9 @@ function Home() {
               perspectives through astrology.
             </p>
 
-            <a href="/services">
+            <Link to="/services">
               Learn More →
-            </a>
+            </Link>
 
           </div>
 
@@ -296,9 +298,9 @@ function Home() {
               clarity and direction.
             </p>
 
-            <a href="/services">
+            <Link to="/services">
               Learn More →
-            </a>
+            </Link>
 
           </div>
 
@@ -331,13 +333,13 @@ function Home() {
             aspiring learners.
           </p>
 
-          <a
-            href="/classes"
+          <Link
+            to="/classes"
             className="primary-button"
           >
             View Classes
             <span aria-hidden="true">→</span>
-          </a>
+          </Link>
 
         </div>
 
@@ -407,18 +409,18 @@ function Home() {
           </p>
 
           <span>
-            —  Feedback
+            — Feedback
           </span>
 
         </div>
 
 
-        <a
-          href="/feedback"
+        <Link
+          to="/feedback"
           className="text-link"
         >
           View all feedback →
-        </a>
+        </Link>
 
       </section>
 
@@ -456,6 +458,7 @@ function Home() {
             Instagram
             <span aria-hidden="true">→</span>
           </a>
+
 
           <a
             href="#"
