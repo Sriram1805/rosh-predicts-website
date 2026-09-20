@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Services.css";
 
 function Services() {
@@ -109,9 +110,9 @@ function Services() {
                   questions and themes you would like to explore.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -139,9 +140,9 @@ function Services() {
                   situation or area of reflection.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -169,9 +170,9 @@ function Services() {
                   themes through a detailed tarot session.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -231,9 +232,9 @@ function Services() {
                   and the themes reflected within it.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -261,9 +262,9 @@ function Services() {
                   you would like to understand more deeply.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -323,9 +324,9 @@ function Services() {
                   you are currently navigating or exploring.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -353,9 +354,9 @@ function Services() {
                   a situation with a fresh perspective.
                 </p>
 
-                <a href="/contact">
+                <Link to="/contact">
                   Enquire →
-                </a>
+                </Link>
 
               </div>
 
@@ -389,9 +390,9 @@ function Services() {
           place to begin.
         </h2>
 
-        <a href="/contact">
+        <Link to="/contact">
           Get in Touch →
-        </a>
+        </Link>
 
       </section>
 

@@ -14,13 +14,13 @@
 ========================= */
 
 .products-hero {
-  min-height: 420px;
-  padding: 65px 8%;
+  min-height: 360px;
+  padding: 50px 8%;
 
   display: grid;
   grid-template-columns: 1fr 0.8fr;
   align-items: center;
-  gap: 45px;
+  gap: 35px;
 
   background: #eaf8fc;
 }
@@ -65,8 +65,8 @@
 ========================= */
 
 .products-hero-art {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   position: relative;
   justify-self: center;
 }
@@ -158,12 +158,12 @@
 ========================= */
 
 .products-section {
-  padding: 80px 8%;
+  padding: 60px 8%;
 }
 
 .products-heading {
   max-width: 620px;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
 .products-heading h2,
@@ -220,7 +220,7 @@
 ========================= */
 
 .product-image {
-  height: 210px;
+  height: 180px;
 
   display: flex;
   align-items: center;
@@ -268,7 +268,7 @@
 ========================= */
 
 .product-card-content {
-  padding: 25px;
+  padding: 21px 23px;
 }
 
 .product-category {
@@ -340,11 +340,11 @@
 ========================= */
 
 .products-process {
-  padding: 80px 8%;
+  padding: 60px 8%;
 
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
-  gap: 70px;
+  gap: 50px;
   align-items: center;
 
   background: #eaf8fc;
@@ -357,7 +357,7 @@
 }
 
 .process-step {
-  padding: 25px;
+  padding: 22px;
 
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(23, 63, 114, 0.08);
@@ -372,7 +372,7 @@
 }
 
 .process-step h3 {
-  margin: 25px 0 10px;
+  margin: 18px 0 10px;
 
   font-family: Georgia, "Times New Roman", serif;
   font-size: 21px;
@@ -394,7 +394,7 @@
 ========================= */
 
 .products-cta {
-  padding: 80px 8%;
+  padding: 60px 8%;
 
   text-align: center;
   background: #ffffff;
@@ -466,7 +466,7 @@
 
 @media (max-width: 600px) {
   .products-hero {
-    padding: 55px 6%;
+    padding: 45px 6%;
   }
 
   .products-hero h1 {
@@ -474,25 +474,25 @@
   }
 
   .products-hero-art {
-    transform: scale(0.88);
-    margin: -10px auto -20px;
+    transform: scale(0.82);
+    margin: -15px auto -25px;
   }
 
   .products-section {
-    padding: 65px 6%;
+    padding: 50px 6%;
   }
 
   .products-grid {
     grid-template-columns: 1fr;
-    gap: 17px;
+    gap: 14px;
   }
 
   .product-image {
-    height: 190px;
+    height: 175px;
   }
 
   .products-process {
-    padding: 65px 6%;
+    padding: 50px 6%;
   }
 
   .products-process-steps {

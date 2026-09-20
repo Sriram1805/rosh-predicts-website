@@ -30,14 +30,14 @@
 .feedback-hero {
   position: relative;
 
-  min-height: 430px;
+  min-height: 380px;
 
   display: grid;
   grid-template-columns: 1fr 0.8fr;
 
   align-items: center;
 
-  padding: 55px 7%;
+  padding: 40px 7%;
 
   overflow: hidden;
 
@@ -122,8 +122,8 @@
 .feedback-hero-art {
   position: relative;
 
-  width: 390px;
-  height: 390px;
+  width: 340px;
+  height: 340px;
 
   justify-self: center;
 
@@ -233,7 +233,7 @@
 
   margin: auto;
 
-  padding: 75px 30px 65px;
+  padding: 50px 30px 45px;
 
   text-align: center;
 }
@@ -282,7 +282,7 @@
 ========================================================= */
 
 .feedback-category {
-  padding: 75px 7% 80px;
+  padding: 55px 7% 60px;
 
   background:
     linear-gradient(
@@ -300,7 +300,7 @@
 .feedback-category-heading {
   max-width: 1200px;
 
-  margin: 0 auto 35px;
+  margin: 0 auto 25px;
 
   display: grid;
 
@@ -308,7 +308,7 @@
 
   align-items: end;
 
-  gap: 50px;
+  gap: 35px;
 }
 
 .feedback-category-heading h2 {
@@ -355,9 +355,9 @@
 }
 
 .feedback-card {
-  min-height: 235px;
+  min-height: 215px;
 
-  padding: 28px 30px;
+  padding: 24px 26px;
 
   background:
     linear-gradient(
@@ -433,7 +433,7 @@
 .feedback-cta {
   position: relative;
 
-  padding: 95px 20px;
+  padding: 60px 20px 65px;
 
   text-align: center;
 
@@ -591,92 +591,125 @@
 
 @media (max-width: 600px) {
 
+  /* HERO */
   .feedback-hero {
-    padding: 60px 6% 35px;
+    padding: 50px 6% 30px;
   }
 
   .feedback-hero h1 {
-    font-size: 45px;
-
+    font-size: 42px;
     letter-spacing: -1px;
   }
 
   .feedback-hero-content > p:last-child {
     font-size: 14px;
+    line-height: 1.7;
   }
 
   .feedback-hero-art {
-    width: 290px;
-    height: 290px;
-
-    margin-top: 10px;
+    width: 265px;
+    height: 265px;
+    margin-top: 5px;
   }
 
   .feedback-ring-one {
-    width: 245px;
-    height: 245px;
+    width: 225px;
+    height: 225px;
   }
 
   .feedback-ring-two {
-    width: 185px;
-    height: 185px;
+    width: 170px;
+    height: 170px;
   }
 
   .feedback-orb {
-    width: 135px;
-    height: 135px;
+    width: 130px;
+    height: 130px;
   }
 
   .feedback-orb span {
-    width: 50px;
-    height: 50px;
-
-    font-size: 28px;
+    width: 48px;
+    height: 48px;
+    font-size: 27px;
   }
 
+
+  /* INTRO */
   .feedback-intro {
-    padding: 65px 6% 55px;
+    padding: 50px 6% 42px;
   }
 
   .feedback-intro h2 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.15;
   }
 
+  .feedback-intro > p:last-child {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  /* FEEDBACK SECTIONS */
   .feedback-category {
-    padding: 65px 6% 70px;
+    padding: 50px 6% 55px;
   }
 
   .feedback-category-heading {
-    margin-bottom: 28px;
+    margin-bottom: 22px;
+    gap: 15px;
   }
 
   .feedback-category-heading h2 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.15;
   }
 
   .feedback-category-heading > p {
     font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  /* FEEDBACK CARDS */
+  .feedback-grid {
+    gap: 14px;
   }
 
   .feedback-card {
     min-height: auto;
+    padding: 22px;
+  }
 
-    padding: 25px;
+  .feedback-quote {
+    font-size: 44px;
+    margin-bottom: 8px;
   }
 
   .feedback-card p {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 18px;
   }
 
+
+  /* CTA */
   .feedback-cta {
-    padding: 75px 6%;
+    padding: 55px 6% 60px;
   }
 
   .feedback-cta h2 {
-    font-size: 44px;
+    font-size: 40px;
+    line-height: 1.12;
+  }
+
+  .feedback-cta > p:not(.section-label) {
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   .feedback-cta-button {
     width: 100%;
+    margin-top: 24px;
   }
 }

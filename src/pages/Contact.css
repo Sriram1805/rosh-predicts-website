@@ -14,12 +14,12 @@
 ========================= */
 
 .contact-hero {
-  min-height: 440px;
-  padding: 70px 8%;
+  min-height: 380px;
+  padding: 45px 8%;
   display: grid;
   grid-template-columns: 1fr 0.85fr;
   align-items: center;
-  gap: 45px;
+  gap: 35px;
   background: #eaf8fc;
   position: relative;
 }
@@ -59,8 +59,8 @@
 ========================= */
 
 .contact-hero-art {
-  width: 380px;
-  height: 380px;
+  width: 330px;
+  height: 330px;
   justify-self: center;
   position: relative;
 }
@@ -158,13 +158,13 @@
 ========================= */
 
 .contact-options {
-  padding: 80px 8%;
+  padding: 60px 8%;
   background: #ffffff;
 }
 
 .contact-section-heading {
   max-width: 620px;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
 .contact-section-heading h2,
@@ -197,8 +197,8 @@
 }
 
 .contact-card {
-  min-height: 275px;
-  padding: 30px;
+  min-height: 240px;
+  padding: 24px;
   border: 1px solid #e5e9ed;
   background: #ffffff;
   position: relative;
@@ -218,7 +218,7 @@
 .contact-card-icon {
   width: 42px;
   height: 42px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   border-radius: 50%;
   background: #e0f7fb;
   display: flex;
@@ -279,17 +279,17 @@
 ========================= */
 
 .contact-message {
-  padding: 85px 8%;
+  padding: 60px 8%;
   background: #eaf8fc;
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   align-items: center;
-  gap: 65px;
+  gap: 50px;
 }
 
 .contact-message-decoration {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   margin: auto;
   position: relative;
   border-radius: 50%;
@@ -349,7 +349,7 @@
 ========================= */
 
 .contact-cta {
-  padding: 85px 8%;
+  padding: 60px 8%;
   text-align: center;
   background: #ffffff;
 }
@@ -423,76 +423,133 @@
 ========================= */
 
 @media (max-width: 600px) {
+
+  /* HERO */
   .contact-hero {
-    padding: 55px 6%;
+    padding: 50px 6% 30px;
     min-height: auto;
   }
 
   .contact-hero h1 {
-    font-size: 46px;
+    font-size: 42px;
+    line-height: 1.05;
   }
 
   .contact-hero-text {
     font-size: 14px;
-    margin-top: 20px;
+    line-height: 1.7;
+    margin-top: 18px;
   }
 
   .contact-hero-art {
-    width: 285px;
-    height: 285px;
+    width: 265px;
+    height: 265px;
     transform: scale(0.9);
-    margin: -5px auto -15px;
+    margin: -5px auto -20px;
   }
 
+
+  /* CONTACT OPTIONS */
   .contact-options {
-    padding: 65px 6%;
+    padding: 50px 6%;
   }
 
   .contact-section-heading {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   .contact-section-heading h2,
   .contact-message h2,
   .contact-cta h2 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.15;
   }
 
+  .contact-section-heading > p:last-child {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 16px;
+  }
+
+
+  /* CONTACT CARDS */
   .contact-cards {
-    gap: 15px;
+    gap: 14px;
   }
 
   .contact-card {
-    padding: 25px;
+    min-height: auto;
+    padding: 21px;
   }
 
+  .contact-card-icon {
+    margin-bottom: 16px;
+  }
+
+  .contact-card h3 {
+    font-size: 23px;
+  }
+
+  .contact-card > p:not(.contact-card-label) {
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 11px 0 17px;
+  }
+
+
+  /* MESSAGE */
   .contact-message {
-    padding: 65px 6%;
+    padding: 50px 6%;
+    gap: 30px;
   }
 
   .contact-message-decoration {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
 
   .message-circle-one {
-    width: 205px;
-    left: 22px;
+    width: 180px;
+    height: 100px;
+    left: 20px;
+    top: 60px;
   }
 
   .message-circle-two {
-    width: 210px;
-    left: 20px;
+    width: 185px;
+    height: 105px;
+    left: 17px;
+    top: 57px;
   }
 
   .contact-message-decoration > span {
-    width: 80px;
-    height: 80px;
-    top: 85px;
-    left: 85px;
+    width: 70px;
+    height: 70px;
+    top: 75px;
+    left: 75px;
+    font-size: 27px;
   }
 
+  .contact-message-content > p:not(.section-label) {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 16px;
+  }
+
+
+  /* CTA */
   .contact-cta {
-    padding: 65px 6%;
+    padding: 50px 6% 55px;
+  }
+
+  .contact-cta > p:not(.section-label) {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 17px auto 22px;
+  }
+
+  .contact-cta-button {
+    width: 100%;
+    justify-content: center;
   }
 }

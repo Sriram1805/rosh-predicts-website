@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Feedback.css";
 
 function Feedback() {
@@ -269,13 +270,14 @@ function Feedback() {
           welcome your thoughts to the community.
         </p>
 
-        <a
-          href="/contact"
+
+        <Link
+          to="/contact"
           className="feedback-cta-button"
         >
           Share Your Feedback
           <span>→</span>
-        </a>
+        </Link>
 
       </section>
 

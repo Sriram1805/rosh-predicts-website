@@ -31,7 +31,7 @@
 .classes-hero {
   position: relative;
 
-  min-height: 430px;
+  min-height: 380px;
 
   display: grid;
 
@@ -39,7 +39,7 @@
 
   align-items: center;
 
-  padding: 50px 7%;
+  padding: 40px 7%;
 
   overflow: hidden;
 
@@ -126,8 +126,8 @@
 .classes-hero-art {
   position: relative;
 
-  width: 370px;
-  height: 370px;
+  width: 330px;
+  height: 330px;
 
   justify-self: center;
 
@@ -237,7 +237,7 @@
 
   margin: 0 auto;
 
-  padding: 65px 7% 55px;
+  padding: 50px 7% 45px;
 
   text-align: center;
 }
@@ -295,7 +295,7 @@
 ========================================================= */
 
 .classes-catalogue {
-  padding: 60px 7% 75px;
+  padding: 50px 7% 60px;
 
   background:
     radial-gradient(
@@ -315,7 +315,7 @@
 .classes-heading {
   max-width: 1250px;
 
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
 
   display: grid;
 
@@ -323,7 +323,7 @@
 
   align-items: end;
 
-  gap: 50px;
+  gap: 35px;
 }
 
 .classes-heading h2 {
@@ -406,7 +406,7 @@
 .class-card-art {
   position: relative;
 
-  height: 145px;
+  height: 135px;
 
   display: flex;
 
@@ -567,7 +567,7 @@
 ========================================================= */
 
 .class-card-content {
-  padding: 23px 25px 25px;
+  padding: 20px 23px 22px;
 }
 
 .class-number {
@@ -624,11 +624,11 @@
 
   gap: 15px;
 
-  margin-top: 18px;
+  margin-top: 14px;
 
-  padding-top: 14px;
+  padding-top: 12px;
 
-  border-top: 1px solid rgba(107, 178, 201, 0.18);
+  border-top: 1px solid rgba(4, 167, 221, 0.18);
 }
 
 .class-card-footer span {
@@ -651,13 +651,50 @@
   color: #9f4f5d;
 }
 
+.class-card-footer-recorded {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 14px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid rgba(4, 167, 221, 0.18);
+}
+
+.class-card-footer-recorded span {
+  color: #083856;
+
+  font-size: 15px;
+}
+
+.class-card-footer-recorded a {
+  color: #c06b79;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  transition: color 0.25s ease;
+}
+
+.class-card-footer-recorded a:hover {
+  color: #9f4f5d;
+}
+
+
 
 /* =========================================================
    CTA
 ========================================================= */
 
 .classes-cta {
-  padding: 70px 20px 75px;
+  padding: 55px 20px 60px;
 
   text-align: center;
 
@@ -804,120 +841,125 @@
 
 @media (max-width: 600px) {
 
+  /* HERO */
   .classes-hero {
-    padding: 60px 6% 35px;
+    padding: 50px 6% 30px;
   }
 
-  .classes-hero h1 {
-    font-size: 46px;
-
-    letter-spacing: -1px;
+  .classes-hero-content h1 {
+    font-size: 42px;
+    line-height: 1.08;
   }
 
   .classes-hero-content > p:last-child {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   .classes-hero-art {
-    width: 285px;
-    height: 285px;
+    width: 265px;
+    height: 265px;
+    margin: 0 auto;
   }
 
   .classes-ring-one {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
 
   .classes-ring-two {
-    width: 190px;
-    height: 190px;
+    width: 175px;
+    height: 175px;
   }
 
   .classes-orb {
-    width: 145px;
-    height: 145px;
+    width: 135px;
+    height: 135px;
   }
 
   .classes-orb span {
-    width: 50px;
-    height: 50px;
-
-    font-size: 34px;
+    font-size: 32px;
   }
 
 
-  /* Intro */
-
+  /* INTRO */
   .classes-intro {
-    padding: 55px 6% 45px;
+    padding: 45px 6% 40px;
   }
 
   .classes-intro h2 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.15;
   }
 
   .classes-intro > p:last-child {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.7;
   }
 
 
-  /* Catalogue */
-
+  /* CLASS SECTIONS */
   .classes-catalogue {
-    padding: 55px 6% 65px;
+    padding: 45px 6% 55px;
   }
 
   .classes-heading {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .classes-heading h2 {
-    font-size: 38px;
-  }
-
-  .classes-heading > p {
-    font-size: 14px;
+    font-size: 34px;
+    line-height: 1.15;
   }
 
   .classes-grid {
     grid-template-columns: 1fr;
-
-    gap: 16px;
+    gap: 14px;
   }
 
 
-  /* Cards */
-
+  /* CLASS CARDS */
   .class-card-art {
-    height: 140px;
+    height: 135px;
   }
 
   .class-card-content {
-    padding: 22px;
+    padding: 20px;
   }
 
   .class-card-content h3 {
-    font-size: 24px;
+    font-size: 23px;
   }
 
-  .class-card-content > p {
+  .class-card-content p {
     min-height: auto;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .class-card-footer {
+    margin-top: 14px;
+    padding-top: 12px;
+  }
+
+  .class-card-footer-recorded {
+    margin-top: 14px;
+    padding-top: 12px;
   }
 
 
   /* CTA */
-
   .classes-cta {
-    padding: 60px 6% 65px;
+    padding: 55px 6% 60px;
   }
 
   .classes-cta h2 {
-    font-size: 40px;
+    font-size: 34px;
+    line-height: 1.15;
   }
 
-  .classes-cta-button {
-    width: 100%;
-
-    justify-content: center;
+  .classes-cta p {
+    font-size: 15px;
+    line-height: 1.7;
   }
 }

@@ -38,25 +38,7 @@
   display: flex;
   align-items: center;
 
-  gap: 9px;
-
   text-decoration: none;
-}
-
-
-/* =================================================
-   CIRCLE RS LOGO
-================================================= */
-
-.navbar-logo-image {
-  width: 50px;
-  height: 50px;
-
-  object-fit: contain;
-
-  display: block;
-
-  flex-shrink: 0;
 }
 
 
@@ -140,6 +122,65 @@
 
 
 /* =================================================
+   MOBILE MENU BUTTON
+================================================= */
+
+.navbar-menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.navbar-menu-button span {
+  display: block;
+
+  width: 23px;
+  height: 2px;
+
+  background: #173f72;
+
+  border-radius: 2px;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+/* =================================================
+   HAMBURGER → X
+================================================= */
+
+.navbar-menu-button.menu-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-menu-button.menu-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-menu-button.menu-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =================================================
    TABLET
 ================================================= */
 
@@ -171,50 +212,168 @@
 @media (max-width: 750px) {
 
   .navbar {
-    height: auto;
+    position: sticky;
 
-    min-height: 70px;
+    width: 100%;
 
-    flex-direction: column;
+    height: 68px;
 
-    align-items: flex-start;
+    min-height: 68px;
 
-    padding: 12px 6%;
+    padding: 0 5%;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
   }
+
+
+  /* -----------------------------------------------
+     Mobile logo
+  ----------------------------------------------- */
 
   .navbar-logo {
-    margin-bottom: 12px;
-  }
-
-  .navbar-logo-image {
-    width: 42px;
-    height: 42px;
+    margin: 0;
   }
 
   .navbar-full-logo {
-    width: 120px;
+    width: 125px;
+    height: auto;
   }
+
+
+  /* -----------------------------------------------
+     Show hamburger
+  ----------------------------------------------- */
+
+  .navbar-menu-button {
+    display: flex;
+  }
+
+
+  /* -----------------------------------------------
+     Hide menu by default
+  ----------------------------------------------- */
 
   .navbar-links {
+    position: absolute;
+
+    top: 68px;
+
+    left: 0;
+
     width: 100%;
 
-    gap: 18px;
+    display: flex;
 
-    overflow-x: auto;
+    flex-direction: column;
 
-    padding-bottom: 4px;
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 8px 5% 14px;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    border-bottom: 1px solid #edf1f3;
+
+    box-shadow:
+      0 10px 25px rgba(23, 63, 114, 0.08);
+
+    box-sizing: border-box;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    transform: translateY(-8px);
+
+    pointer-events: none;
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
   }
 
+
+  /* -----------------------------------------------
+     Open menu
+  ----------------------------------------------- */
+
+  .navbar-links.navbar-links-open {
+    visibility: visible;
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+  }
+
+
+  /* -----------------------------------------------
+     Mobile links
+  ----------------------------------------------- */
+
   .navbar-links a {
-    flex-shrink: 0;
+    width: 100%;
 
-    padding: 5px 0;
+    padding: 12px 5px;
 
-    font-size: 13px;
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #f0f3f5;
+  }
+
+  .navbar-links a:last-child {
+    border-bottom: none;
+  }
+
+
+  /* -----------------------------------------------
+     Active mobile link
+  ----------------------------------------------- */
+
+  .navbar-links a.active {
+    color: #c97684;
   }
 
   .navbar-links a.active::after {
-    bottom: -2px;
+    display: none;
+  }
+
+}
+
+
+/* =================================================
+   SMALL PHONES
+================================================= */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    height: 64px;
+
+    min-height: 64px;
+  }
+
+  .navbar-full-logo {
+    width: 115px;
+  }
+
+  .navbar-menu-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .navbar-links {
+    top: 64px;
   }
 
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./About.css";
 
 function About() {
@@ -115,7 +116,7 @@ function About() {
 
         </div>
 
-      </section>
+      </section> 
 
 
       {/* =====================================================
@@ -272,7 +273,7 @@ function About() {
           CTA
       ===================================================== */}
 
-      <section className="about-cta">
+      {/* <section className="about-cta">
 
         <p className="section-label">
           BEGIN YOUR JOURNEY
@@ -289,15 +290,15 @@ function About() {
           learning experiences.
         </p>
 
-        <a
-          href="/services"
+        <Link
+          to="/services"
           className="about-cta-button"
         >
           Explore Services
           <span>→</span>
-        </a>
+        </Link>
 
-      </section>
+      </section> */}
 
     </main>
   );

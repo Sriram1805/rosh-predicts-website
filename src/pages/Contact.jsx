@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Contact.css";
 
 function Contact() {
@@ -160,9 +161,9 @@ function Contact() {
           at Rosh Predicts.
         </p>
 
-        <a href="/services" className="contact-cta-button">
+        <Link to="/services" className="contact-cta-button">
           Explore Services <span>→</span>
-        </a>
+        </Link>
       </section>
 
     </main>

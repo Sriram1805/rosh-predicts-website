@@ -31,13 +31,13 @@
 .services-page-hero {
   position: relative;
 
-  min-height: 330px;
+  min-height: 300px;
 
   display: flex;
 
   align-items: center;
 
-  padding: 55px 7%;
+  padding: 45px 7%;
 
   overflow: hidden;
 
@@ -236,7 +236,7 @@
 .services-catalogue {
   width: 100%;
 
-  padding: 72px 7% 85px;
+  padding: 55px 7% 65px;
 
   background: #ffffff;
 }
@@ -249,7 +249,7 @@
 .service-group {
   max-width: 1250px;
 
-  margin: 0 auto 72px;
+  margin: 0 auto 55px;
 }
 
 .service-group:last-child {
@@ -268,9 +268,9 @@
 
   align-items: end;
 
-  gap: 50px;
+  gap: 35px;
 
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .service-group-label {
@@ -356,7 +356,7 @@
 .service-card-art {
   position: relative;
 
-  height: 160px;
+  height: 145px;
 
   display: flex;
 
@@ -543,7 +543,7 @@
 ========================================================= */
 
 .service-card-content {
-  padding: 23px 27px 25px;
+  padding: 20px 24px 22px;
 }
 
 .service-type {
@@ -606,7 +606,7 @@
 ========================================================= */
 
 .astrology-group {
-  padding: 62px 0;
+  padding: 45px 0;
 
   border-top: 1px solid rgba(107, 178, 201, 0.15);
 
@@ -636,7 +636,7 @@
 .services-bottom {
   position: relative;
 
-  padding: 85px 20px;
+  padding: 65px 20px;
 
   text-align: center;
 
@@ -820,9 +820,9 @@
 @media (max-width: 600px) {
 
   .services-page-hero {
-    min-height: 470px;
+    min-height: 430px;
 
-    padding: 65px 6%;
+    padding: 55px 6%;
   }
 
   .services-page-hero h1 {
@@ -836,15 +836,15 @@
   }
 
   .services-catalogue {
-    padding: 60px 6% 75px;
+    padding: 50px 6% 60px;
   }
 
   .service-group {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 
   .service-group-heading {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   .service-group-heading h2 {
@@ -856,11 +856,11 @@
   }
 
   .service-card-art {
-    height: 155px;
+    height: 140px;
   }
 
   .service-card-content {
-    padding: 22px;
+    padding: 20px;
   }
 
   .service-card-content h3 {
@@ -872,11 +872,11 @@
   }
 
   .astrology-group {
-    padding: 60px 0;
+    padding: 45px 0;
   }
 
   .services-bottom {
-    padding: 75px 6%;
+    padding: 60px 6%;
   }
 
   .services-bottom h2 {

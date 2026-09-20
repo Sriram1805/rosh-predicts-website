@@ -1,10 +1,16 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-{/*import rsLogo from "../assets/rosh-rs-logo.png";*/}
 import fullLogo from "../assets/rosh-predicts-full-logo.png";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
 
@@ -14,17 +20,7 @@ function Navbar() {
 
       <div className="navbar-logo">
 
-        <NavLink to="/">
-
-          {/* Circle RS Logo 
-
-          <img
-            src={rsLogo}
-            alt="Rosh Predicts symbol"
-            className="navbar-logo-image"
-          /> */}
-
-          {/* Full Brand Logo */}
+        <NavLink to="/" onClick={closeMenu}>
 
           <img
             src={fullLogo}
@@ -38,36 +34,61 @@ function Navbar() {
 
 
       {/* =================================================
+          MOBILE MENU BUTTON
+      ================================================= */}
+
+      <button
+        type="button"
+        className={`navbar-menu-button ${
+          menuOpen ? "menu-open" : ""
+        }`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+
+      {/* =================================================
           NAVIGATION
       ================================================= */}
 
-      <div className="navbar-links">
+      <div
+        className={`navbar-links ${
+          menuOpen ? "navbar-links-open" : ""
+        }`}
+      >
 
-        <NavLink to="/">
+        <NavLink to="/" onClick={closeMenu}>
           Home
         </NavLink>
 
-        <NavLink to="/about">
+        <NavLink to="/about" onClick={closeMenu}>
           About
         </NavLink>
 
-        <NavLink to="/services">
+        <NavLink to="/services" onClick={closeMenu}>
           Services
         </NavLink>
 
-        <NavLink to="/products">
+        <NavLink to="/products" onClick={closeMenu}>
           Products
         </NavLink>
 
-        <NavLink to="/classes">
+        <NavLink to="/classes" onClick={closeMenu}>
           Classes
         </NavLink>
 
-        <NavLink to="/feedback">
+        <NavLink to="/feedback" onClick={closeMenu}>
           Feedback
         </NavLink>
 
-        <NavLink to="/contact">
+        <NavLink to="/contact" onClick={closeMenu}>
           Contact
         </NavLink>
 

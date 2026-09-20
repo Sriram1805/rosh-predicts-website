@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Products.css";
 
 function Products() {
@@ -74,9 +75,9 @@ function Products() {
               <div className="product-bottom">
                 <span className="product-price">₹ Price</span>
 
-                <a href="#" className="product-button">
+                <Link to="/contact" className="product-button">
                   Enquire <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </article>
@@ -100,9 +101,9 @@ function Products() {
               <div className="product-bottom">
                 <span className="product-price">₹ Price</span>
 
-                <a href="#" className="product-button">
+                <Link to="/contact" className="product-button">
                   Enquire <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </article>
@@ -126,9 +127,9 @@ function Products() {
               <div className="product-bottom">
                 <span className="product-price">₹ Price</span>
 
-                <a href="#" className="product-button">
+                <Link to="/contact" className="product-button">
                   Enquire <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </article>
@@ -152,9 +153,9 @@ function Products() {
               <div className="product-bottom">
                 <span className="product-price">₹ Price</span>
 
-                <a href="#" className="product-button">
+                <Link to="/contact" className="product-button">
                   Enquire <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </article>
@@ -224,9 +225,9 @@ function Products() {
           explore the available options.
         </p>
 
-        <a href="#" className="products-cta-button">
+        <Link to="/contact" className="products-cta-button">
           Contact on WhatsApp <span>→</span>
-        </a>
+        </Link>
       </section>
 
     </main>
